@@ -36,6 +36,8 @@ services:
       - tempo-data:/tmp/tempo
     ports:
       - '3110:3100' # Tempo
+      - '4317:4317' # Tempo
+      - '4318:4318' # Tempo
       - '9411:9411' # zipkin
 
   grafana:
