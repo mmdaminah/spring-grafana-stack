@@ -4,6 +4,10 @@ server:
 distributor:
   receivers:
     zipkin:
+      endpoint: 0.0.0.0:9411
+
+ingester:
+  max_block_duration: 5m
 
 storage:
   trace:
